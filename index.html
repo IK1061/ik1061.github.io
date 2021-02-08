@@ -19,18 +19,24 @@ clear:both;
 <!-- W3C logos - Behåll denna kod som ger dig snabbknappar till validering av både din HTML- och CSS-kod -->
 <div class="clearfix"></div>
 <div>
-<p>
-<a href="http://validator.w3.org/check?uri=referer"><img
-src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"
-alt="Valid HTML5" height="50" width="50"
-style="border:0;" /></a>
+<p>  
+    <!-- Fix för HTTPS (HTML-validering) - OBS: url:en måste ändras för varje html-sida -->
+    <a href="https://validator.w3.org/nu/?doc=https://ik1061.github.io">
+        <img
+            src="http://www.w3.org/html/logo/downloads/HTML5_Logo_64.png"
+            alt="Valid HTML5" height="50" width="50"
+            style="border:0;" />
+    </a>
+    <!-- Slut fix för HTTPS (HTML-validering)... -->
 </p>
 <p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-<img style="border:0;width:88px;height:31px"
-src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-alt="Valid CSS!" />
-</a>
+    <!-- Fix för HTTPS (CSS-validering) -->
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>                 
+    <!-- Slut fix för HTTPS (CSS-validering) -->
 </p>
 </div>
 
