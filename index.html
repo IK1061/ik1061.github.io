@@ -13,20 +13,21 @@
     
     
     .top {
-        
-        
+        height: 100px;         
     }
     
     header {
-        
-        
+        float: left;               
     }
     
     
     nav {
-        
+        float: right;
     }
     
+    nav li {
+        display: inline;
+    }
 
     .middle {
         
@@ -48,6 +49,16 @@
         
     }
     
+    .footer-left {
+        float: left;     
+        
+    }
+    
+    
+    .footer-right {        
+        float: right;     
+    }
+    
     
 .clearfix {
 clear:both;
@@ -63,7 +74,12 @@ clear:both;
         </header>
         
         <nav class="top">
-            meny
+            <ul>
+                <li>Tjänster</li>                    
+                <li>Kunder</li>
+                <li>Kontakt</li>
+                <li>Om oss</li>
+            </ul>
         </nav>
         
         <main class="middle">
@@ -75,7 +91,8 @@ clear:both;
         </aside>            
         
         <footer>
-            footer
+            <p class="footer-left"><a href="">Jobba hos oss</a></p>
+            <p class="footer-right">Copyright PejsIT 2021</p>
         </footer>
     
     </div>
