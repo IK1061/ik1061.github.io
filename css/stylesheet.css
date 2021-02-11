@@ -29,12 +29,14 @@ nav li {
 }  
 
 main {
-   float: left; 
+   float: left;
+   width: 65%;
 }
 
 
 aside {
-    float: right;        
+    float: right;
+    width: 35%;
 }
 
 
