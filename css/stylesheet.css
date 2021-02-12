@@ -36,6 +36,21 @@ nav li {
     display: inline;
 }
 
+
+ul.brodsmulor {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.brodsmulor li {
+  display: inline;
+}
+
+ul.brodsmulor li+li:before {
+  padding: 8px;
+  content: "/\00a0";
+}
+
 .middle {
     min-height: 600px;
 }  
