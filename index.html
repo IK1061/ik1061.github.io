@@ -6,12 +6,43 @@
 <meta name="description" content="">
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <title>PejsIT</title>
-<style>        
+<style>
+    /* Kod tagen och modifierad från */
+    @keyframes ticker {
+	  0% { margin-top: -0px; }
+	  11% {	margin-top: -50px; }
+	  22% {	margin-top: -100px; }
+	  33% { margin-top: -150px; }
+	  44% { margin-top: -200px; }
+	  55% { margin-top: -250px; }
+	  66% { margin-top: -200px; }
+	  77% {	margin-top: -150px; }
+	  88% { margin-top: -100px; }
+	  100% { margin-top: -50px; }  		  	  
+	}
+    
+    aside > .feed {
+        overflow: hidden;    
+    }
+    
+    aside > .feed ul {
+		animation: ticker 35s cubic-bezier(1, 1, 0.5, 1) infinite;		
+		-webkit-user-select: none;            
+    }
+    
     .feed ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }      
+    
+	aside >.feed ul:hover {
+	  animation-play-state: paused;
+	}
+	
+	aside > .feed :hover + ul {
+	  animation-play-state: paused;
+	}    
     
     span.date {
         display: block;
@@ -52,16 +83,17 @@
             <h2>Underrubriker</h2>
         </main>        
         
-        <aside class="middle feed">
-            <ul>
-                <li><span class="date">2021-03-23</span><span class="news">Covid-19 är äntligen över och den 20:e maj firar vi 10-årsjubileum och det vill vi fira med våra kunder, hjärtligt välkomna...</span></li>
-                <li><span class="date">2021-03-04</span><span class="news">PejsIT blev kommunens snabbast växande företag och det firar vi därför med en kickoff i samband med vårt 10-årsjubileum. All personal är förstås välkomna att delta...</span></li>
-                <li><span class="date">2021-02-19</span><span class="news">PejsIT har byggt om sin egen hemsida till en modernare och stilren design som går i &lt;hösten/vårens&gt; tecken...</span></li>
-                <li><span class="date">2021-01-25</span><span class="news">Företaget Retro har anlitat oss till att bygga om hela sin webbplats, ett stort projekt som gör att vi behöver fler medarbetare, vi söker därmed fler webbutvecklare och webbdesigner - kontakta  oss och bli en av teamet...</span></li>
-                <li><span class="date">2020-10-18</span><span class="news">Neue Kontor har för andra året i rad blivit nominerade till Svenska Designpriset och vi står förstås bakom det lyckade konceptet...</span></li>
-                <li><span class="date">2020-09-03</span><span class="news">Vi söker flera frontendutvecklare...</span></li>
-                
-            </ul>
+        <aside class="middle">
+            <div class="feed">	
+                <ul>
+                    <li><span class="date">2021-03-23</span><span class="news">Covid-19 är äntligen över och den 20:e maj firar vi 10-årsjubileum och det vill vi fira med våra kunder, hjärtligt välkomna...</span></li>
+                    <li><span class="date">2021-03-04</span><span class="news">PejsIT blev kommunens snabbast växande företag och det firar vi därför med en kickoff i samband med vårt 10-årsjubileum. All personal är förstås välkomna att delta...</span></li>
+                    <li><span class="date">2021-02-19</span><span class="news">PejsIT har byggt om sin egen hemsida till en modernare och stilren design som går i &lt;hösten/vårens&gt; tecken...</span></li>
+                    <li><span class="date">2021-01-25</span><span class="news">Företaget Retro har anlitat oss till att bygga om hela sin webbplats, ett stort projekt som gör att vi behöver fler medarbetare, vi söker därmed fler webbutvecklare och webbdesigner - kontakta  oss och bli en av teamet...</span></li>
+                    <li><span class="date">2020-10-18</span><span class="news">Neue Kontor har för andra året i rad blivit nominerade till Svenska Designpriset och vi står förstås bakom det lyckade konceptet...</span></li>
+                    <li><span class="date">2020-09-03</span><span class="news">Vi söker flera frontendutvecklare...</span></li>                
+                </ul>
+            </div>
         </aside>            
         
         <div class="clearfix"></div>
