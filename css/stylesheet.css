@@ -17,6 +17,7 @@ header {
 
 nav {
     float: right;
+    text-align: right;
     width: 80%;
 }
 
