@@ -12,12 +12,14 @@
 }
 
 header {
-    float: left;               
+    float: left;
+    width: 20%;
 }
 
 
 nav {
     float: right;
+    width: 80%;
 }
 
 nav li {
