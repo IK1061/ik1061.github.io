@@ -1,13 +1,11 @@
 #wrapper {
     max-width: 1280px;        
     margin: 0 auto;
-    border: 1px solid #000000;
 }
 
 
 .top {
     height: 100px;      
-    border: 1px solid #000000;
     background-color: #E6E6E6;
 }
 
@@ -27,7 +25,6 @@ nav li {
 }
 
 .middle {
-    border: 1px solid #000000;
     min-height: 600px;
     background-color: #EFEFEF;
 }  
@@ -47,7 +44,6 @@ aside {
 
 footer {
     height: 40px;
-    border: 1px solid #000000;
 }
 
 .footer-left {
