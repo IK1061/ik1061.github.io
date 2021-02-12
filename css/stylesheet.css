@@ -38,12 +38,12 @@ nav li {
 
 .middle {
     min-height: 600px;
-    background-color: #EFEFEF;
 }  
 
 main {
    float: left;
    width: 65%;
+   background-color: #EFEFEF;
 }
 
 
