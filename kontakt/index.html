@@ -49,27 +49,27 @@
               <li><a href="/">Hem</a></li>
               <li>Kontakt</li>
             </ul>
-             <form action = "/kontakt/tack" method = "post" id="formular">
+             <form action="/kontakt/tack" method="get" id="formular">
                  <h1>Kontakt</h1>
-                 <h3>Har du frågor om våra tjänster, priser eller annat? Fyll i vårt formulär så hör av av oss!</h3>
+                 <h3>Har du frågor om våra tjänster, priser eller annat? Fyll i vårt formulär så hör vi av oss!</h3>
                  <br><br>
                  <input type = "text" name = "namn" required placeholder="Namn"> *
                  <br><br>
                 <input type = "text" name = "foretag" required placeholder="Företag"> *
                 <br><br>
-                <input type = "text" name = "epost" required placeholder="Epost"> *
+                <input type = "email" name = "epost" required placeholder="Epost"> *
                 <br><br>
                 <input type = "text" name = "telenr" required placeholder="Telefonnummer"> *
                 <br><br>
                      <select name="amne">
-                         <option value="amne">Ämne</option>
+                         <option value="">Välj ämne</option>
                          <option value="webbutveckling">Webbutveckling</option>
                          <option value="sokmotoroptimering">Sökmotoroptimering</option>
                           <option value="support">Support</option>
                           <option value="ovrigt">Övrigt</option>
                      </select>
                  <br><br>
-                <textarea name = "comments" rows = "5" cols = "25" placeholder="Meddelande"></textarea>
+                <textarea name = "comments" rows = "5" cols = "25" placeholder="Meddelande" required></textarea> *
                 <br><br>
                 <input type ="checkbox" name ="gdpr" value ="godkant"><em>Jag godkänner att mina personuppgifter lagras hos PejsIT enligt GDPR</em>
                 <br><br>
