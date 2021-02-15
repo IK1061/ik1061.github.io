@@ -20,10 +20,7 @@ h1, h2, h3, p {
 	margin: 20px;}
 
 nav a {
-	 margin-top: 50px;
- 	 margin-bottom: 50px;
- 	 margin-right: 20px;
-	  margin-left: 20px;
+	margin: 30px;
 }
 a:link, a:visited {color: #063752; 
                    text-decoration: none;
