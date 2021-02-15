@@ -12,17 +12,10 @@
         margin: 30px;        
     }
     
-	input[type="text"], input[type="email"] {
+	input[type="text"], input[type="email"], select, textarea {
 		width: 400px;	
 	}
-	
-	select {
-	   width: 408px;	
-	}	
-	
-	textarea {
-	   width: 403px;	
-	}	
+
 	
     .obligatorisk {
 		color: #ff0000;
@@ -74,13 +67,14 @@
                 <br><br>
                 <input type="text" name="telenr" size="40" required placeholder="Telefonnummer"> <span class="obligatorisk">*</span>
                 <br><br>
-                     <select name="amne">
+                     <select name="amne"> 
                          <option value="">Välj ett ämne</option>
                          <option value="webbutveckling">Webbutveckling</option>
                          <option value="sokmotoroptimering">Sökmotoroptimering</option>
                           <option value="support">Support</option>
                           <option value="ovrigt">Övrigt</option>
                      </select>
+		     <span class="obligatorisk">*</span>
                  <br><br>
                 <textarea name="comments" rows="10" cols="40" placeholder="Meddelande" required></textarea> <span class="obligatorisk">*</span>
                 <br><br>
