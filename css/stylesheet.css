@@ -39,6 +39,10 @@ header {
     width: 20%;
 }
 
+header img {
+	margin-left: -17px;
+}
+
 
 nav {
     float: right;
