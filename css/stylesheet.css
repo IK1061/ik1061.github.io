@@ -15,6 +15,13 @@ h3 {
     color: #0065A0;
 }
 
+a:link {color:blue}
+a:visited {color: #808080}
+a:hover {color: green;
+         font-weight:bold;
+}
+a:active {color: red}
+
 .top {
     height: 100px;      
     background-color: #E6E6E6;
