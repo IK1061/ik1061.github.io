@@ -16,7 +16,8 @@ h3 {
     color: #0065A0;
 }
 nav a {
-	 margin: 30px 20px;
+	 margin: 20px;
+	vertical-align: middle;
 }
 a:link, a:visited {color: #063752; 
                    text-decoration: none;
