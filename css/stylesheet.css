@@ -40,7 +40,7 @@ a:active {color: #2D2D2D;
 
 header {
     float: left;
-    width: 20%;
+    width: 50%;
     line-height: 100px;
 }
 
@@ -52,7 +52,7 @@ header img {
 nav {
     float: right;
     text-align: right;
-    width: 80%;
+    width: 50%;
 }
 
 nav li {
