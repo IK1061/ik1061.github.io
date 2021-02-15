@@ -19,6 +19,7 @@ h3 {
 a:link, a:visited {color: #063752;
                     margin: 10px;
                     text-decoration: none;
+		    font-weight: bold
 }
 
 a:hover {color: #063752;
