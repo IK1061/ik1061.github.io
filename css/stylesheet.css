@@ -16,11 +16,11 @@ h3 {
     color: #0065A0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
 	margin: 20px;}
 
 nav a {
-	margin: 30px;
+	margin: 20px;
 }
 a:link, a:visited {color: #063752; 
                    text-decoration: none;
