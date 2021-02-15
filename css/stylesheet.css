@@ -15,11 +15,12 @@ h2 {
 h3 {
     color: #0065A0;
 }
-
-a:link, a:visited {color: #063752;
-                    margin: 10px;
-                    text-decoration: none;
-		    font-weight: bold
+a.top {
+	 margin: 20px;
+}
+a:link, a:visited {color: #063752; 
+                   text-decoration: none;
+		   font-weight: bold
 }
 
 a:hover {color: #063752;
