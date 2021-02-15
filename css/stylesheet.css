@@ -15,12 +15,18 @@ h3 {
     color: #0065A0;
 }
 
-a:link {color:blue}
-a:visited {color: #808080}
-a:hover {color: green;
+a:link {color:green;
+        text-decoration: none;}
+
+a:visited {color:red;
+           text-decoration: none;}
+
+a:hover {color: blue;
          font-weight:bold;
+         text-decoration: underline;
 }
-a:active {color: red}
+a:active {color: white;
+           text-decoration: underline;}
 
 .top {
     height: 100px;      
