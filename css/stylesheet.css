@@ -56,7 +56,7 @@ nav {
 
 nav li {
     display: inline;
-    line-height: 50px;
+    line-height: 100px;
     
 }
 
@@ -107,7 +107,7 @@ footer {
     background-color: #E6E6E6;
 }
 footer li {
-	line-height: 20px;
+	line-height: 40px;
 }
 
 .footer-left {
