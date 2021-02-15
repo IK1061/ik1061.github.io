@@ -16,6 +16,8 @@ h3 {
     color: #0065A0;
 }
 
+h1, h2, h3, p, ul.bolagsfakta {
+	margin: 20px;}
 
 nav a {
 	margin: 20px;
@@ -80,7 +82,7 @@ main {
    float: left;
    width: 65%;
    background-color: #EFEFEF;
-   margin: 20px;
+ 
    
 }
 
