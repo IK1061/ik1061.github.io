@@ -61,11 +61,11 @@
              <form action="/kontakt/tack" method="get" id="formular">
                  <input type="text" name="namn" size="40" required placeholder="Namn"> <span class="obligatorisk">*</span>
                  <br><br>
-                <input type="text" name="foretag" size="40" required placeholder="Företag"> <span class="obligatorisk">*</span>
+                <input type="text" name="foretag" size="40" placeholder="Företag">
                 <br><br>
                 <input type="email" name="epost" size="40" required placeholder="Epost"> <span class="obligatorisk">*</span>
                 <br><br>
-                <input type="text" name="telenr" size="40" required placeholder="Telefonnummer"> <span class="obligatorisk">*</span>
+                <input type="tel" name="telenr" size="40" placeholder="Telefonnummer 07X-XXXXXXX" pattern="[0-9]{3}-[0-9]{7}">
                 <br><br>
                      <select name="amne"> 
                          <option value="">Välj ett ämne</option>
@@ -76,7 +76,7 @@
                      </select>
 		     <span class="obligatorisk">*</span>
                  <br><br>
-                <textarea name="comments" rows="10" cols="40" placeholder="Meddelande" required></textarea> <span class="obligatorisk">*</span>
+                <textarea name="comments" rows="10" cols="35" placeholder="Meddelande" required></textarea> <span class="obligatorisk">*</span>
                 <br><br>
                 <input type ="checkbox" name ="gdpr" value ="godkant" required><em>Jag godkänner att mina personuppgifter lagras hos PejsIT enligt GDPR </em><span class="obligatorisk">*</span>
                 <br><br>
