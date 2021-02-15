@@ -12,8 +12,12 @@
         margin: 30px;        
     }
     
-	input[type="text"], input[type="email"], select, textarea {
+	input[type="text"], input[type="email"], textarea {
 		width: 400px;	
+	}
+	
+	select {
+	   width: 405px;	
 	}
 	
     .obligatorisk {
@@ -53,9 +57,9 @@
               <li>Kontakt</li>
             </ul>
 		
-			 <h1>Kontakt</h1>
-			 <h3>Har du frågor om våra tjänster, priser eller annat? Fyll i vårt formulär så hör vi av oss!</h3>
-			 <br><br>
+	 <h1>Kontakt</h1>
+	 <h3>Har du frågor om våra tjänster, priser eller annat? Fyll i vårt formulär så hör vi av oss!</h3>
+	 <br><br>
 		
              <form action="/kontakt/tack" method="get" id="formular">
                  <input type="text" name="namn" size="40" required placeholder="Namn"> <span class="obligatorisk">*</span>
@@ -67,7 +71,7 @@
                 <input type="text" name="telenr" size="40" required placeholder="Telefonnummer"> <span class="obligatorisk">*</span>
                 <br><br>
                      <select name="amne">
-                         <option value="">Välj ämne</option>
+                         <option value="">Välj ett ämne</option>
                          <option value="webbutveckling">Webbutveckling</option>
                          <option value="sokmotoroptimering">Sökmotoroptimering</option>
                           <option value="support">Support</option>
