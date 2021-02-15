@@ -79,6 +79,7 @@ main {
    float: left;
    width: 65%;
    background-color: #EFEFEF;
+   margin: 20px;
 }
 
 .stretch {
