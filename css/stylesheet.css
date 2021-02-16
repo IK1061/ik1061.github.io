@@ -44,6 +44,7 @@ a:active {color: #2D2D2D;
 .top {
     height: 100px;      
     background-color: #E6E6E6;
+	overflow: hidden;
 }
 
 header {
