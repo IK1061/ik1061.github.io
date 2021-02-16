@@ -242,12 +242,6 @@ footer {
 	line-height: 40px;
     padding: 0 10px;	
 }
-footer ul {
-	
-	list-style: none;
-	margin: 0;
-	padding: 10px;
-}
 
 .footer-left {
     float: left;
@@ -255,10 +249,7 @@ footer ul {
 	height:40px;
 	margin: 0;
 	padding: 0;
-	
-
 }
-
 
 .footer-right {        
     float: right;   
