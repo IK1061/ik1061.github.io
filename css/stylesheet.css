@@ -239,6 +239,8 @@ aside {
 footer {
     height: 40px;
     background-color: #E6E6E6;
+	line-height: 40px;
+    padding: 0 10px;	
 }
 footer ul {
 	
