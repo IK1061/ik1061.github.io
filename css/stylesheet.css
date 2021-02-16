@@ -163,11 +163,16 @@ footer li {
 }
 
 .footer-left {
-    float: left;     
+    float: left;
+	width:50%;
+	height:40px;
 
 }
 
 
 .footer-right {        
-    float: right;     
+    float: right;   
+	width:50%;
+	height:40px;
+
 }
