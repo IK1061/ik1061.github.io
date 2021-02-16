@@ -42,7 +42,7 @@ a:active {color: #2D2D2D;
            text-decoration: underline;}
 
 .top {
-    height: 100px;      
+    height: 110px;      
     background-color: #E6E6E6;
 	overflow: hidden;
 }
@@ -58,7 +58,7 @@ header img {
 
 nav {
     text-align: right;    
-    line-height: 100px;
+    line-height: 110px;
 }
 
 nav li {
@@ -268,6 +268,6 @@ footer ul {
 
 @media only screen and (max-width: 640px) {
 	nav {   	
-    	line-height: 50px;
+    	line-height: 40px;
 	}
 }
