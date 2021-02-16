@@ -89,6 +89,12 @@ main {
  
    
 }
+ .bildtjanster {
+        display:block;
+	width:100%;
+        height:50%;
+    }
+ 
    .kundbilder {
         float: left;
         width:70px;
