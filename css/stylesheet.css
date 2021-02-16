@@ -287,7 +287,12 @@ footer ul {
 	}  
 	
 	main.start {
-		background-image: none;	
+		background-image: none;
+		width:65%;
+	}
+	
+	main {
+		width:100%;
 	}
 	
 	aside img {
