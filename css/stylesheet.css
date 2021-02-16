@@ -160,6 +160,8 @@ footer {
 }
 footer li {
 	vertical-align: middle;
+	list-style: none;
+	display: inline;
 }
 
 .footer-left {
