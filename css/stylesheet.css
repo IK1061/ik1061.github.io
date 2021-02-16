@@ -271,6 +271,11 @@ footer ul {
 	nav {   	
     	line-height: 40px;
 	}
+	
+	nav ul {
+		position: relative;
+		top: -5px;
+	}
 }
 
 @media print {
