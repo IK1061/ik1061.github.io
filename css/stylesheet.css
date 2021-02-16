@@ -41,7 +41,7 @@ a:active {color: #2D2D2D;
 header {
     float: left;
     width: 50%;
-    line-height: 100px;
+    
 }
 
 header img {
@@ -57,6 +57,7 @@ nav {
 
 nav li {
     display: inline;
+    line-height: 100px;
     
     
 }
