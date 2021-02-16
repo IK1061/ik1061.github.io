@@ -166,6 +166,8 @@ footer li {
     float: left;
 	width:50%;
 	height:40px;
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -174,5 +176,6 @@ footer li {
     float: right;   
 	width:50%;
 	height:40px;
-
+	margin: 0;
+	padding: 0;
 }
