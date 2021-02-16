@@ -16,7 +16,7 @@ h3 {
     color: #0065A0;
 }
 
-h1, h2, h3, p, ul.bolagsfakta {
+main > h1, h2, h3, p, ul.bolagsfakta {
 	margin: 20px;}
 
 nav a {
