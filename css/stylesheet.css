@@ -162,6 +162,7 @@ footer li {
 	vertical-align: middle;
 	list-style: none;
 	display: inline;
+	padding: 0;
 }
 
 .footer-left {
