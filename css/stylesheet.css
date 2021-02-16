@@ -126,7 +126,18 @@ main {
     .obligatorisk {
 		color: #ff0000;
 	}
-      
+
+  aside img {
+	display:block;
+	width:100%;
+	height:100%;
+     }
+	
+    .bolagsfakta {
+	list-style-type:none;
+	padding:0;
+     }
+	
 
 
 .stretch {
