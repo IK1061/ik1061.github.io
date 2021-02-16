@@ -97,6 +97,83 @@ main {
  
    
 }
+   /* Kod för nyhetsflödet som är tagen och modifierad från https://codepen.io/JayPea21/pen/vNBBBo */
+    @keyframes ticker {
+	  0% { margin-top: -0px; }
+	  11% {	margin-top: -50px; }
+	  22% {	margin-top: -100px; }
+	  33% { margin-top: -150px; }
+	  44% { margin-top: -200px; }		  	    
+ 	  55% { margin-top: -300px; }
+  	  66% { margin-top: -350px; }
+      77% { margin-top: -400px; }
+      88% { margin-top: -450px; }
+  	  100% { margin-top: -50px; }	    	
+   }
+    
+    aside > .feed {
+		margin: 20px 10px 20px 10px;		
+		height: 640px;
+        overflow: hidden;    
+    }
+    
+    aside > .feed ul {
+		animation: ticker 35s cubic-bezier(1, 1, 1, 1) infinite;		
+		-webkit-user-select: none;            
+    }
+    
+    .feed ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }      
+    
+	.feed li {
+		margin-bottom: 30px;	
+	}
+	
+    aside >.feed ul:hover {
+	  animation-play-state: paused;
+	}
+
+	aside > .feed :hover + ul {
+	  animation-play-state: paused;
+	}    
+    /* Slut på Kod för nyhetsflödet som är tagen och modifierad från */
+	
+    span.date {
+    	display: block;
+        margin: 5px;
+		font-size: 1.1em;
+		font-weight: bold;
+    }
+    
+    span.news {
+        display: block;
+        margin: 2px 5px 15px 5px;
+		
+    }
+	main.start {
+		background-image: url("/bilder/barbar-dator-pa-kontor.png");
+		/*
+		background-position-y: top -160px;
+		background-position-x: left -500px;
+		*/		
+		background-position-y: top 0px;
+		background-position-x: left -50px;
+		background-repeat: no-repeat;
+		background-size: 120% 117%;		
+	}
+		
+    
+	main.start > img {
+	  	display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		width: 70%;
+		height: 70%;
+	}
+
  .bildtjanster {
         display:block;
 	width:100%;
