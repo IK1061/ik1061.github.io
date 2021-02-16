@@ -103,7 +103,7 @@ main {
         float: left;
         width:70px;
         height:70px;
-        margin:10px;  
+        margin:0px 10px;  
 	vertical-align: middle;
     }
     
