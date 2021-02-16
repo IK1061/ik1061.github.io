@@ -89,6 +89,23 @@ main {
  
    
 }
+   .kundbilder {
+        float: left;
+        width:70px;
+        height:70px;
+        margin-right: 10px;  
+	vertical-align: middle;
+    }
+    
+    .recension {
+        padding: 5px 20px;
+        height: 70px;
+                
+    }
+   
+    .clearfix {
+        clear:both;
+    }
 
 .stretch {
 	width:100%;
