@@ -108,6 +108,11 @@ main {
         height: 70px;
                 
     }
+ aside img {
+	display:block;
+	height: 100%;
+	width: 100%;
+	}
 
 
 .stretch {
