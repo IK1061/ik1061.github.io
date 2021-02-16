@@ -97,6 +97,84 @@ main {
  
    
 }
+
+	/* Gäller endast för startsida */
+	main.start {
+		background-image: url("/bilder/barbar-dator-pa-kontor.png");
+		/*
+		background-position-y: top -160px;
+		background-position-x: left -500px;
+		*/		
+		background-position-y: top 0px;
+		background-position-x: left -50px;
+		background-repeat: no-repeat;
+		background-size: 120% 117%;		
+	}
+		
+    
+	main.start > img {
+	  	display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+		width: 70%;
+		height: 70%;
+	}
+	/* Slut för startsida */
+
+ /* Gäller för kunder */
+   .kundbilder {
+        float: left;
+        width:70px;
+        height:70px;
+        margin:0px 10px;  
+	
+    }
+    
+    .recension {
+        padding: 5px 20px;
+        height: 70px;
+                
+    }
+	/* Slut kunder */
+
+/* Start för kontaktformulär */	
+  #formular {
+        margin-left: 30px;        
+    }
+    
+	input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+		width: 400px;	
+	}
+
+	
+    .obligatorisk {
+		color: #ff0000;
+	}
+	/* Slut kontaktformulär */
+	
+    .bolagsfakta {
+	list-style-type:none;
+	padding:0;
+     }
+	
+
+
+.stretch {
+	width:100%;
+}
+
+aside {
+    float: right;
+    width: 35%;
+    background-color: #6B6B6B;
+    color: #EFEFEF;
+}
+
+  aside img {
+	display:block;
+	width:100%;
+	height:100%;
+     }
    /* Kod för nyhetsflödet som är tagen och modifierad från https://codepen.io/JayPea21/pen/vNBBBo */
     @keyframes ticker {
 	  0% { margin-top: -0px; }
@@ -141,99 +219,26 @@ main {
 	}    
     /* Slut på Kod för nyhetsflödet som är tagen och modifierad från */
 	
-    span.date {
+    .feed > span.date {
     	display: block;
         margin: 5px;
 		font-size: 1.1em;
 		font-weight: bold;
     }
     
-    span.news {
+    .feed > span.news {
         display: block;
         margin: 2px 5px 15px 5px;
 		
     }
-	main.start {
-		background-image: url("/bilder/barbar-dator-pa-kontor.png");
-		/*
-		background-position-y: top -160px;
-		background-position-x: left -500px;
-		*/		
-		background-position-y: top 0px;
-		background-position-x: left -50px;
-		background-repeat: no-repeat;
-		background-size: 120% 117%;		
-	}
-		
-    
-	main.start > img {
-	  	display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-		width: 70%;
-		height: 70%;
-	}
 
+	/* Gäller för tjänster */
  .bildtjanster {
         display:block;
-	width:100%;
+		width:100%;
         height:50%;
     }
- 
-   .kundbilder {
-        float: left;
-        width:70px;
-        height:70px;
-        margin:0px 10px;  
-	
-    }
-    
-    .recension {
-        padding: 5px 20px;
-        height: 70px;
-                
-    }
-
-
-  #formular {
-        margin-left: 30px;        
-    }
-    
-	input[type="text"], input[type="tel"], input[type="email"], select, textarea {
-		width: 400px;	
-	}
-
-	
-    .obligatorisk {
-		color: #ff0000;
-	}
-
-  aside img {
-	display:block;
-	width:100%;
-	height:100%;
-     }
-	
-    .bolagsfakta {
-	list-style-type:none;
-	padding:0;
-     }
-	
-
-
-.stretch {
-	width:100%;
-}
-
-
-aside {
-    float: right;
-    width: 35%;
-    background-color: #6B6B6B;
-    color: #EFEFEF;
-}
-
-
+	/* Slut på tjänster */
 
 footer {
     height: 40px;
