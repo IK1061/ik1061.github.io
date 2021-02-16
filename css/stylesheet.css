@@ -161,7 +161,7 @@ footer {
 footer li {
 	vertical-align: middle;
 	list-style: none;
-	display: inline;
+	margin: 0;
 	padding: 0;
 }
 
