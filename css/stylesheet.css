@@ -47,9 +47,7 @@ a:active {color: #2D2D2D;
 }
 
 header {
-    float: left;
-    width: 50%;
-    
+    float: left;    
 }
 
 header img {
@@ -58,16 +56,12 @@ header img {
 
 
 nav {
-    float: right;
-    text-align: right;
-    width: 50%;
+    text-align: right;    
+    line-height: 100px;
 }
 
 nav li {
-    display: inline;
-    line-height: 60px;
-    
-    
+    display: inline;           
 }
 
 
