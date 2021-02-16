@@ -264,3 +264,9 @@ footer ul {
 	padding: 0;
 	text-align: right;
 }
+
+@media only screen and (max-width: 640px) {
+	nav {   	
+    	line-height: 50px;
+	}
+}
