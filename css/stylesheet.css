@@ -159,7 +159,7 @@ footer {
     background-color: #E6E6E6;
 }
 footer li {
-	line-height: 20px;
+	vertical-align: middle;
 }
 
 .footer-left {
@@ -168,7 +168,7 @@ footer li {
 	height:40px;
 	margin: 0;
 	padding: 0;
-	 vertical-align: middle;
+	
 
 }
 
@@ -179,6 +179,5 @@ footer li {
 	height:40px;
 	margin: 0;
 	padding: 0;
-	 vertical-align: middle;
 	text-align: right;
 }
