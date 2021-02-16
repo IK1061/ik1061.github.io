@@ -271,3 +271,40 @@ footer ul {
     	line-height: 40px;
 	}
 }
+
+@media print {
+	
+	h1, h2, h3 {
+		color: #000000;
+	}
+	
+	middle, aside {
+		color: #000000;
+	}
+	
+	.middle {
+		overflow: visible;
+	}  
+	
+	main.start {
+		background-image: none;	
+	}
+	
+	aside img {
+		display:none;
+    	}
+	 
+	.kundbilder {
+        display:none; 
+    	}
+	
+	.bildtjanster {
+        display:none;
+    	}
+	
+	aside > .feed {
+        overflow: hidden;    
+    	}
+	
+	
+}
