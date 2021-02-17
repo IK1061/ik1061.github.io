@@ -147,12 +147,12 @@ h1, h2, h3, p, ul.bolagsfakta {
 
 .recension {
 	padding: 0 20px;			/* Flytta in innehållet 20 pixlar */
-	height: 80px;	
+	height: 70px;	
 	margin-bottom: 15px;		/* Lägg till extra space mellan varje kundrecension */
 }
 
 .recension p {
-	height: 80px;				/* Sätt höjden till 80 pixlar även här */
+	height: 70px;				/* Sätt höjden till 80 pixlar även här */
     margin: 0;
     display: table-cell;		/* Använd tabell liknande funktion */
     vertical-align: middle;		/* Centrera texten vertikalt */
