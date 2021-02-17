@@ -198,7 +198,7 @@ aside img {
 
 
 /* Kod för nyhetsflödet som är tagen och modifierad från https://codepen.io/JayPea21/pen/vNBBBo */
-/* Inställningar för hur nyhetsflödet skall */
+/* Inställningar för hur nyhetsflödet skall röra sig och i vilka nivåer */
 @keyframes ticker {
   0% { margin-top: -0px; }
   11% {	margin-top: -50px; }
@@ -214,17 +214,18 @@ aside img {
 
 aside > .feed {
 	margin: 20px 10px 20px 10px;		
-	height: 640px;
-	overflow: hidden;    
+	height: 640px;		/* Sätt höjden till 640 pixlar */ 
+	overflow: hidden; 	/* Dölj all text som inte ryms i elementet */   
 }
 
 aside > .feed ul {
+	/* Animeringen för nyhetsflödet sker via en kubisk Bezier-kurva som även repeteras i alla oändlighet enligt inställningarna i ticker */
 	animation: ticker 35s cubic-bezier(1, 1, 1, 1) infinite;		
 	-webkit-user-select: none;            
 }
 
 .feed ul {
-	list-style-type: none;
+	list-style-type: none;	
 	margin: 0;
 	padding: 0;
 }      
@@ -233,6 +234,7 @@ aside > .feed ul {
 	margin-bottom: 30px;	
 }
 
+/* Pausa nyhetsflödet när man för musen över */
 aside >.feed ul:hover {
   animation-play-state: paused;
 }
@@ -242,6 +244,7 @@ aside > .feed :hover + ul {
 }    
 /* Slut på Kod för nyhetsflödet som är tagen och modifierad från */
 
+/* Storlek och utseende för datum i nyhetsflödet */
 span.date {
 	display: block;
 	margin: 5px;
@@ -249,49 +252,51 @@ span.date {
 	font-weight: bold;
 }
 
+/* Storlek och utseende för nyhetstexten i nyhetsflödet */
 span.news {
 	display: block;
 	margin: 2px 5px 15px 5px;
 
 }
 
-/* Gäller för tjänster */
+/* Specifika inställningar för sidan Tjänster */
 .bildtjanster {
 	display:block;
 	width:100%;
 	height:50%;
 }
-/* Slut på tjänster */
 /* Slut aside */
 
 /* Start footer */
 footer {
     height: 40px;
     background-color: #E6E6E6;
-	line-height: 40px;
+	line-height: 40px;	/* Centrera texten vertikalt */
     padding: 0 10px;	
 }
 
 .footer-left {
-    float: left;
+    float: left;	/* Placera elementet till vänster */
 	width:50%;
 	height:40px;
 	margin: 0;
 	padding: 0;
 }
 
-.footer-right {        
+.footer-right {     	/* Placera elementet till höger */   
     float: right;   
 	width:50%;
 	height:40px;
 	margin: 0;
 	padding: 0;
-	text-align: right;
+	text-align: right;	/* Högerjustera texten */
 }
 /* Slut footer */
 
 
+/* Inställningar när webbläsarens bredd är mindre 640 pixlar */
 @media only screen and (max-width: 640px) {
+	/* Start flytta och ändra mellanrummet mellan menyerna när de läggs nedanför varandra */
 	nav {   	
     	line-height: 40px;
 	}
@@ -300,7 +305,9 @@ footer {
 		position: relative;
 		top: -5px;
 	}
+	/* Slut flytta och ändra mellanrummet mellan menyerna när de läggs nedanför varandra */
 	
+	/* Höj marginalen mellan recensionerna något */
 	.recension {
 		margin-bottom: 20px;	
 	}
@@ -308,24 +315,29 @@ footer {
 
 /* Start utskrift */
 @media print {
+	/* Ändra rubrikernas färg till svart */
 	h1, h2, h3 {
 		color: #000000;
 	}
 	
+	/* Ändra innehållets färg till svart */
 	main, aside {
 		color: #000000;
 	}
 	
+	/* Visa all text */
 	.middle {
 		overflow: visible;
 	}  
 	
-	main.start {
-		background-image: none;
-	}
-	
+	/* Ändra mains bredd till 100% av utrymmet */
 	main {
 		width:100%;
+	}
+		
+	/* Start dölj element från utskrift */
+	main.start {
+		background-image: none;
 	}
 	
 	aside img {
@@ -343,7 +355,6 @@ footer {
 	.bildtjanster {
         display:none;
     	}
-	
-
+	/* Slut dölj element från utskrift */
 }
 /* Slut utskrift */		
