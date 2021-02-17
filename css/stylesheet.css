@@ -132,14 +132,14 @@ main.start > img {
 }
 
 .recension {
-	padding: 5px 20px;
-	height: 70px;	
-	margin-bottom: 10px;
+	padding: 0 20px;
+	height: 80px;	
+	margin-bottom: 15px;
 }
 
 .recension p {
 	height: 80px;
-    margin: 0px;
+    margin: 0;
     display: table-cell;
     vertical-align: middle;	
 }
