@@ -1,17 +1,20 @@
 html, body {
-    margin: 0;
+    margin: 0; /* Ta bort mellanrumet högst upp på sidan */
 }
 
 body {
-	font-size: 12pt;
+	font-size: 12pt; /* Standardstorlek på textstorleken */
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Container för hela sidan */
 #wrapper {
     max-width: 1280px;        
     margin: 0 auto;	
 }
 
+
+/* Start rubriker */
 h1 {
     color: #063752;
 }
@@ -23,7 +26,10 @@ h2 {
 h3 {
     color: #0065A0;
 }
+/* Slut rubriker */
 
+
+/* Start länkar */
 a:link, a:visited {
 	color: #063752; 
     text-decoration: none;
@@ -39,13 +45,18 @@ a:active {
 	color: #2D2D2D;
     text-decoration: underline;
 }
+/* Slut länkar */
 
+
+/* Gemensamma inställningar för översta sektionen */
 .top {
     height: 100px;      
     background-color: #E6E6E6;
 	overflow: hidden;
 }
 
+
+/* Start sektion med logga */
 header {
     float: left;    
 }
@@ -54,21 +65,24 @@ header img {
 	margin-left: -10px;
 	height: 105px;
 }
+/* Slut sektion med logga */
 
 
+/* Start sektionen för huvudmeny */
 nav {
-    text-align: right;    
-    line-height: 70px;
+    text-align: right;  /* Lägg menyn till höger */
+    line-height: 70px;	/* Centrera texten vertikalt */
 }
 
 nav a {
 	margin: 20px;
 }
 
-
 nav li {
-    display: inline;           
+    display: inline;  /* Liggande meny */          
 }
+/* Slut sektionen för huvudmeny */
+
 
 /* Start brödsmulor */
 ul.brodsmulor {
@@ -77,15 +91,16 @@ ul.brodsmulor {
 }
 
 ul.brodsmulor li {
-  display: inline;
+  display: inline;	/* Liggande lista */
 }
 
 ul.brodsmulor li+li:before {
   padding: 8px;
-  content: "/\00a0";
+  content: "/\00a0";	/* Skjut in ett framåtslash (/) mellan listorna */
 }
 /* Slut brödsmulor */
 
+/* Gemensamma inställningar för mellersta sektionen */
 .middle {
 	height: 680px;
 	overflow: auto;
