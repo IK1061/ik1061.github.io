@@ -299,7 +299,6 @@ footer {
 	
 	main.start {
 		background-image: none;
-		width:65%;
 	}
 	
 	main {
@@ -308,18 +307,20 @@ footer {
 	
 	aside img {
 		display:none;
-    }
-	 
+    	}
+	
+	aside > .feed {
+        display:none;    
+    	} 
+	
 	.kundbilder {
         display:none; 
-    }
+    	}
 	
 	.bildtjanster {
         display:none;
-    }
+    	}
 	
-	aside > .feed {
-        overflow: hidden;    
-    }
+
 }
 /* Slut utskrift */		
