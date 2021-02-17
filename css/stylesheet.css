@@ -38,17 +38,15 @@ a:link, a:visited {
 	font-weight: bold
 }
 
-a:active {
-	color: #2D2D2D;
-    text-decoration: underline;
-}
-
 a:hover {
 	color: #063752;
     text-decoration: underline;
 }
 
-
+a:active {
+	color: #2D2D2D;
+    text-decoration: underline;
+}
 
 
 
