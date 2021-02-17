@@ -138,7 +138,10 @@ main.start > img {
 }
 
 .recension p {
-	
+	height: 80px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;	
 }
 /* Slut kunder */
 
