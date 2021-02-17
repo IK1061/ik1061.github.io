@@ -103,11 +103,7 @@ main > h1, h2, h3, p, ul.bolagsfakta {
 
 /* Gäller endast för startsida */
 main.start {
-	background-image: url("/bilder/barbar-dator-pa-kontor.png");
-	/*
-	background-position-y: top -160px;
-	background-position-x: left -500px;
-	*/		
+	background-image: url("/bilder/barbar-dator-pa-kontor.png");		
 	background-position-y: top 0px;
 	background-position-x: left -50px;
 	background-repeat: no-repeat;
@@ -280,9 +276,11 @@ footer {
 		top: -5px;
 	}
 	
+	/*
 	main {
 		background-size: 120% 230%;
 	}
+	*/
 }
 
 /* Start utskrift */
