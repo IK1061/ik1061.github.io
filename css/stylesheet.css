@@ -279,6 +279,10 @@ footer {
 		position: relative;
 		top: -5px;
 	}
+	
+	main {
+		background-size: 120% 230%;
+	}
 }
 
 /* Start utskrift */
