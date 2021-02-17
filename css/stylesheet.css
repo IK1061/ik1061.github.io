@@ -24,14 +24,6 @@ h3 {
     color: #0065A0;
 }
 
-main > h1, h2, h3, p, ul.bolagsfakta {
-	margin: 20px;}
-
-nav a {
-	margin: 20px;
-}
-
-
 a:link, a:visited {
 	color: #063752; 
     text-decoration: none;
@@ -47,8 +39,6 @@ a:active {
 	color: #2D2D2D;
     text-decoration: underline;
 }
-
-
 
 .top {
     height: 100px;      
@@ -71,11 +61,16 @@ nav {
     line-height: 70px;
 }
 
+nav a {
+	margin: 20px;
+}
+
+
 nav li {
     display: inline;           
 }
 
-
+/* Start brödsmulor */
 ul.brodsmulor {
   padding: 10px 16px;
   list-style: none;
@@ -89,6 +84,7 @@ ul.brodsmulor li+li:before {
   padding: 8px;
   content: "/\00a0";
 }
+/* Slut brödsmulor */
 
 .middle {
 	height: 680px;
@@ -98,76 +94,76 @@ ul.brodsmulor li+li:before {
 main {
    float: left;
    width: 65%;
-   background-color: #EFEFEF;
- 
-   
+   background-color: #EFEFEF;   
 }
 
-	/* Gäller endast för startsida */
-	main.start {
-		background-image: url("/bilder/barbar-dator-pa-kontor.png");
-		/*
-		background-position-y: top -160px;
-		background-position-x: left -500px;
-		*/		
-		background-position-y: top 0px;
-		background-position-x: left -50px;
-		background-repeat: no-repeat;
-		background-size: 120% 117%;		
-	}
-		
-    
-	main.start > img {
-	  	display: block;
-  		margin-left: auto;
-  		margin-right: auto;
-		width: 70%;
-		height: 70%;
-	}
-	/* Slut för startsida */
+main > h1, h2, h3, p, ul.bolagsfakta {	
+	margin: 20px;
+}
 
- /* Gäller för kunder */
-   .kundbilder {
-        float: left;
-        width:70px;
-        height:70px;
-        margin:0px 10px;  
-	
-    }
-    
-    .recension {
-        padding: 5px 20px;
-        height: 70px;
-                
-    }
-	/* Slut kunder */
+/* Gäller endast för startsida */
+main.start {
+	background-image: url("/bilder/barbar-dator-pa-kontor.png");
+	/*
+	background-position-y: top -160px;
+	background-position-x: left -500px;
+	*/		
+	background-position-y: top 0px;
+	background-position-x: left -50px;
+	background-repeat: no-repeat;
+	background-size: 120% 117%;		
+}
 
-/* Start för kontaktformulär */	
-  #formular {
-        margin-left: 30px;        
-    }
-    
-	input[type="text"], input[type="tel"], input[type="email"], select, textarea {
-		width: 400px;	
-	}
-
-	
-    .obligatorisk {
-		color: #ff0000;
-	}
-	/* Slut kontaktformulär */
-	
-    .bolagsfakta {
-	list-style-type:none;
-	padding:0;
-     }
-	
-
+main.start > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	height: 70%;
+}
+/* Slut för startsida */
 
 .stretch {
 	width:100%;
 }
 
+/* Gäller för kunder */
+.kundbilder {
+	float: left;
+	width:70px;
+	height:70px;
+	margin:0px 10px;  
+
+}
+
+.recension {
+	padding: 5px 20px;
+	height: 70px;
+
+}
+/* Slut kunder */
+
+/* Start för kontaktformulär */	
+#formular {
+	margin-left: 30px;        
+}
+    
+input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+	width: 400px;	
+}
+	
+.obligatorisk {
+	color: #ff0000;
+}
+/* Slut kontaktformulär */
+	
+
+.bolagsfakta {
+	list-style-type:none;
+	padding:0;
+}
+
+/* Start aside */
 aside {
     float: right;
     width: 35%;
@@ -175,76 +171,79 @@ aside {
     color: #EFEFEF;
 }
 
-  aside img {
+aside img {
 	display:block;
 	width:100%;
 	height:100%;
-     }
-   /* Kod för nyhetsflödet som är tagen och modifierad från https://codepen.io/JayPea21/pen/vNBBBo */
-    @keyframes ticker {
-	  0% { margin-top: -0px; }
-	  11% {	margin-top: -50px; }
-	  22% {	margin-top: -100px; }
-	  33% { margin-top: -150px; }
-	  44% { margin-top: -200px; }		  	    
- 	  55% { margin-top: -300px; }
-  	  66% { margin-top: -350px; }
-      77% { margin-top: -400px; }
-      88% { margin-top: -450px; }
-  	  100% { margin-top: -50px; }	    	
-   }
-    
-    aside > .feed {
-		margin: 20px 10px 20px 10px;		
-		height: 640px;
-        overflow: hidden;    
-    }
-    
-    aside > .feed ul {
-		animation: ticker 35s cubic-bezier(1, 1, 1, 1) infinite;		
-		-webkit-user-select: none;            
-    }
-    
-    .feed ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }      
-    
-	.feed li {
-		margin-bottom: 30px;	
-	}
-	
-    aside >.feed ul:hover {
-	  animation-play-state: paused;
-	}
+ }
 
-	aside > .feed :hover + ul {
-	  animation-play-state: paused;
-	}    
-    /* Slut på Kod för nyhetsflödet som är tagen och modifierad från */
-	
-    span.date {
-    	display: block;
-        margin: 5px;
-		font-size: 1.1em;
-		font-weight: bold;
-    }
-    
-    span.news {
-        display: block;
-        margin: 2px 5px 15px 5px;
-		
-    }
+/* Kod för nyhetsflödet som är tagen och modifierad från https://codepen.io/JayPea21/pen/vNBBBo */
+@keyframes ticker {
+  0% { margin-top: -0px; }
+  11% {	margin-top: -50px; }
+  22% {	margin-top: -100px; }
+  33% { margin-top: -150px; }
+  44% { margin-top: -200px; }		  	    
+  55% { margin-top: -300px; }
+  66% { margin-top: -350px; }
+  77% { margin-top: -400px; }
+  88% { margin-top: -450px; }
+  100% { margin-top: -50px; }	    	
+}
 
-	/* Gäller för tjänster */
- .bildtjanster {
-        display:block;
-		width:100%;
-        height:50%;
-    }
-	/* Slut på tjänster */
+aside > .feed {
+	margin: 20px 10px 20px 10px;		
+	height: 640px;
+	overflow: hidden;    
+}
 
+aside > .feed ul {
+	animation: ticker 35s cubic-bezier(1, 1, 1, 1) infinite;		
+	-webkit-user-select: none;            
+}
+
+.feed ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}      
+
+.feed li {
+	margin-bottom: 30px;	
+}
+
+aside >.feed ul:hover {
+  animation-play-state: paused;
+}
+
+aside > .feed :hover + ul {
+  animation-play-state: paused;
+}    
+/* Slut på Kod för nyhetsflödet som är tagen och modifierad från */
+
+span.date {
+	display: block;
+	margin: 5px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+span.news {
+	display: block;
+	margin: 2px 5px 15px 5px;
+
+}
+
+/* Gäller för tjänster */
+.bildtjanster {
+	display:block;
+	width:100%;
+	height:50%;
+}
+/* Slut på tjänster */
+/* Slut aside */
+
+/* Start footer */
 footer {
     height: 40px;
     background-color: #E6E6E6;
@@ -268,6 +267,8 @@ footer {
 	padding: 0;
 	text-align: right;
 }
+/* Slut footer */
+
 
 @media only screen and (max-width: 640px) {
 	nav {   	
@@ -280,8 +281,8 @@ footer {
 	}
 }
 
+/* Start utskrift */
 @media print {
-	
 	h1, h2, h3 {
 		color: #000000;
 	}
@@ -305,19 +306,18 @@ footer {
 	
 	aside img {
 		display:none;
-    	}
+    }
 	 
 	.kundbilder {
         display:none; 
-    	}
+    }
 	
 	.bildtjanster {
         display:none;
-    	}
+    }
 	
 	aside > .feed {
         overflow: hidden;    
-    	}
-	
-	
+    }
 }
+/* Slut utskrift */		
