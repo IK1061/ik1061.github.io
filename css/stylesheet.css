@@ -100,43 +100,42 @@ ul.brodsmulor li+li:before {
 }
 /* Slut brödsmulor */
 
+
 /* Gemensamma inställningar för mellersta sektionen */
 .middle {
 	height: 680px;
 	overflow: auto;
 }  
 
+
+/* Start sektionen main med huvudinnehållet */
 main {
    float: left;
    width: 65%;
    background-color: #EFEFEF;   
 }
 
-main > h1, h2, h3, p, ul.bolagsfakta {	
+h1, h2, h3, p, ul.bolagsfakta {	
 	margin: 20px;
 }
 
-/* Gäller endast för startsida */
-main.start {
-	background-image: url("/bilder/barbar-dator-pa-kontor.png");		
-	background-position-y: top 0px;
-	background-position-x: left -50px;
-	background-repeat: no-repeat;
-	background-size: 120% 117%;		
-}
+	/* Gäller endast för startsida */
+	main.start {
+		background-image: url("/bilder/barbar-dator-pa-kontor.png");		
+		background-position-y: top 0px;		/* Flytta bakgrundsbilden horisontalt så den börjar från toppen */
+		background-position-x: left -50px;  /* Flytta bakgrundsbilden vertikalt så datorn lägger sig precis under sista textstycket */
+		background-repeat: no-repeat;		/* Visa bilden endast en gång, repetera den inte */
+		background-size: 120% 117%;			/* Ändra storleken så att bilden passar bättre in */
+	}
+	/* Slut för startsida */
+/* Slut sektionen main med huvudinnehållet */
 
-main.start > img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-	height: 70%;
-}
-/* Slut för startsida */
 
+/* Använd hela utrymmet för main i de fall då det behövs */
 .stretch {
 	width:100%;
 }
+
 
 /* Gäller för kunder */
 .kundbilder {
