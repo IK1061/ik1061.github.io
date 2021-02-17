@@ -128,15 +128,15 @@ main.start > img {
 	float: left;
 	width:70px;
 	height:70px;
-	margin:0px 10px;  
-
+	margin:0px 10px;
 }
 
 .recension {
 	padding: 5px 20px;
-	height: 70px;
-
+	height: 70px;	
+	margin-bottom: 10px;
 }
+
 /* Slut kunder */
 
 /* Start för kontaktformulär */	
