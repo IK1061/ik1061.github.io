@@ -276,11 +276,9 @@ footer {
 		top: -5px;
 	}
 	
-	/*
-	main {
-		background-size: 120% 230%;
+	.recension {
+		margin-bottom: 20px;	
 	}
-	*/
 }
 
 /* Start utskrift */
