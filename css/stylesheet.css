@@ -31,14 +31,17 @@ nav a {
 	margin: 20px;
 }
 
-/*
-a, a:link, a:visited {
+
+a:link, a:visited {
 	color: #063752; 
     text-decoration: none;
 	font-weight: bold
 }
-*/
 
+a:active {
+	color: #2D2D2D;
+    text-decoration: underline;
+}
 
 a:hover {
 	color: #063752;
@@ -46,10 +49,7 @@ a:hover {
 }
 
 
-a:active {
-	color: #2D2D2D;
-    text-decoration: underline;
-}
+
 
 
 .top {
